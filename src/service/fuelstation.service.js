@@ -1,7 +1,7 @@
 import axios from 'axios';
 const url = "https://combustivel-ricardo.herokuapp.com";
 
-export const regsiterFuelStation = async(entity) => {
+export const registerFuelStation = async(entity) => {
     try {
         const response = await axios.post(`${url}/fuelstation`, entity);
         const { data} = response;
